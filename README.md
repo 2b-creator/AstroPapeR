@@ -5,6 +5,8 @@ An R Markdown output format that renders documents with the
 Google Sans Code, KaTeX math, an optional table of contents and a `min-light`
 code palette.
 
+> 中文说明: [doc/readme-zh.md](doc/readme-zh.md)
+
 ## Gallery
 
 ![AstroPapeR sample](gallery/sample-cover.png)
@@ -82,7 +84,8 @@ highlighting, fonts and troubleshooting — is in the customisation guide:
 
 Bug reports, feature requests, documentation fixes and translations are welcome.
 [`CONTRIBUTING.md`](CONTRIBUTING.md) covers the development setup, how the CSS
-build works, the testing commands and the release checklist.
+build works, the testing commands and the release checklist; a Chinese version is
+available as [`CONTRIBUTING.zh.md`](CONTRIBUTING.zh.md).
 
 ## Notes
 

@@ -3,6 +3,8 @@
 Thanks for taking the time to contribute. This document explains how the package
 is put together, how to run it locally, and what a good pull request looks like.
 
+> 中文版: [CONTRIBUTING.zh.md](CONTRIBUTING.zh.md)
+
 ## Ways to contribute
 
 - **Bug reports** — a minimal `.Rmd` that reproduces the problem plus the full
