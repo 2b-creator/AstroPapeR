@@ -16,9 +16,12 @@ test_that("the skeleton renders to HTML with the bundled CSS", {
   dir.create(dir)
   file.copy(skeleton, file.path(dir, "skeleton.Rmd"))
 
+  # self_contained = FALSE keeps pandoc from trying to download the CDN
+  # fonts and KaTeX assets while embedding resources.
   out <- rmarkdown::render(
     file.path(dir, "skeleton.Rmd"),
     output_dir = dir,
+    output_options = list(self_contained = FALSE),
     quiet = TRUE
   )
 

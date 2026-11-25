@@ -5,7 +5,7 @@ An R Markdown output format that renders documents with the
 Google Sans Code, KaTeX math, an optional table of contents and a `min-light`
 code palette.
 
-> 中文说明: [doc/readme-zh.md](doc/readme-zh.md)
+> 中文说明: [README.zh.md](README.zh.md)
 
 ## Gallery
 

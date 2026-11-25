@@ -1,0 +1,18 @@
+AstroPapeR bundles styling adapted from the AstroPaper theme.
+
+AstroPaper
+  https://github.com/satnaing/astro-paper
+  Copyright (c) 2022 Sat Naing
+  MIT License
+
+Typography rules are derived from @tailwindcss/typography
+  https://github.com/tailwindlabs/tailwindcss-typography
+  MIT License
+
+The syntax highlighting palette in inst/themes/astropaper.theme is derived
+from Shiki's "min-light" theme.
+  https://github.com/shikijs/shiki
+  MIT License
+
+KaTeX (math rendering) and Google Sans Code (font) are loaded from their
+respective CDNs at view time and are not redistributed with this package.

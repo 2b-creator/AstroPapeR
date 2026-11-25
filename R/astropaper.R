@@ -24,9 +24,8 @@
 #' @seealso [rmarkdown::html_document()]
 #'
 #' @examples
-#' \dontrun{
-#' rmarkdown::render("post.Rmd", output_format = astropaper::astropaper())
-#' }
+#' fmt <- astropaper(toc = FALSE)
+#' inherits(fmt, "rmarkdown_output_format")
 #' @export
 astropaper <- function(...,
                        css = NULL,

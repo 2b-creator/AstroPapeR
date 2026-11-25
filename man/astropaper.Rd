@@ -59,9 +59,8 @@ package with \code{library(astropaper)} masks
 \code{\link[rmarkdown:html_document]{rmarkdown::html_document()}}, so prefer \code{astropaper::html_document()}.
 }
 \examples{
-\dontrun{
-rmarkdown::render("post.Rmd", output_format = astropaper::astropaper())
-}
+fmt <- astropaper(toc = FALSE)
+inherits(fmt, "rmarkdown_output_format")
 }
 \seealso{
 \code{\link[rmarkdown:html_document]{rmarkdown::html_document()}}

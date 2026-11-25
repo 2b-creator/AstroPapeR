@@ -53,7 +53,7 @@ astropaper(
 )
 ```
 
-覆盖文本、表格、数学、代码和图形的完整示例见 [`doc/sample.Rmd`](sample.Rmd)。
+覆盖文本、表格、数学、代码和图形的完整示例见 [`doc/sample.Rmd`](doc/sample.Rmd)。
 
 ## 自定义
 
@@ -74,7 +74,7 @@ tools/build-css.sh
 包发布的是编译后的 `inst/css/astropaper.compiled.css`，所以最终用户不需要装 Node。
 
 完整走查——token、排版、模板结构、代码高亮、字体、常见问题——见自定义指南：
-[English](customize.md) · [中文](customize.zh.md)。
+[English](doc/customize.md) · [中文](doc/customize.zh.md)。
 
 ## 贡献
 

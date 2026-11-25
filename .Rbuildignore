@@ -7,3 +7,9 @@
 ^sample\.Rmd$
 ^sample_files$
 ^gallery$
+^CONTRIBUTING\.md$
+^CONTRIBUTING\.zh\.md$
+^LICENSE\.md$
+^README\.zh\.md$
+^doc$
+^cran-comments\.md$
