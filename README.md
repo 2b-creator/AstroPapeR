@@ -1,17 +1,25 @@
-# astropaper
+# AstroPapeR
 
 An R Markdown output format that renders documents with the
 [AstroPaper](https://github.com/satnaing/astro-paper) look: Tailwind typography,
 Google Sans Code, KaTeX math, an optional table of contents and a `min-light`
 code palette.
 
+## Gallery
+
+![AstroPapeR sample](gallery/sample-cover.png)
+
+| | |
+|---|---|
+| ![Text](gallery/sample-text.png) | ![Math](gallery/sample-math.png) |
+| ![Code](gallery/sample-code.png) | ![Plot](gallery/sample-plot.png) |
+
 ## Install
 
 ```r
-# from a local checkout
-install.packages("astropaper", repos = NULL, type = "source")
-# or
-devtools::install_local("path/to/astropaper")
+install.packages("devtools")
+library(devtools)
+install_github("2b-creator/AstroPapeR")
 ```
 
 ## Use

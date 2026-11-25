@@ -2,3 +2,4 @@ node_modules/
 .Rproj.user/
 *.Rcheck/
 *.tar.gz
+sample_files/

@@ -4,3 +4,6 @@
 ^\.gitignore$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^sample\.Rmd$
+^sample_files$
+^gallery$
