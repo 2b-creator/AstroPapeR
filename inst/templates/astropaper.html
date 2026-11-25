@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc $pandoc-version$" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+
+  <style>
+    $styles.html()$
+  </style>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+$if(math)$
+  $math$
+$endif$
+</head>
+<body class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col">
+<main id="main-content" class="app-layout flex-1 py-10">
+  <h1 class="text-accent inline-block text-2xl font-bold sm:text-3xl">$title$</h1>
+  <div class="text-muted-foreground my-2 flex items-center gap-2 text-sm">
+    $if(date)$$date$$endif$$if(author)$<span aria-hidden="true">|</span><span>$for(author)$$author$$sep$, $endfor$</span>$endif$
+  </div>
+
+  $if(toc)$
+  <details class="border-border bg-muted/40 my-6 rounded-lg border p-4" open>
+    <summary class="text-foreground cursor-pointer text-sm font-semibold">目录</summary>
+    <nav id="TOC" class="text-muted-foreground mt-2 text-sm">$table-of-contents$</nav>
+  </details>
+  $endif$
+
+  <article id="article" class="app-prose max-w-app mt-8">$body$</article>
+</main>
+
+$if(copyright)$
+<footer class="app-layout mt-auto">
+  <div class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4">
+    <div class="text-muted-foreground my-2 flex flex-col items-center text-sm whitespace-nowrap sm:flex-row">
+      <span>$copyright$</span>
+    </div>
+  </div>
+</footer>
+$endif$
+
+</body>
+</html>
+

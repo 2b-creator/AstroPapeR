@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./typography.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@utility max-w-app {
+  @apply max-w-3xl;
+}
+@utility app-layout {
+  @apply max-w-app mx-auto w-full px-4;
+}
+
+/* Astro injects this variable via <Font />; standalone HTML needs it here. */
+:root {
+  --font-google-sans-code: "Google Sans Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html { color-scheme: light; }
+}
+
+/* Extra rules for pandoc / knitr output. */
+.app-prose pre {
+  @apply border-border my-6 overflow-x-auto rounded-lg border p-4 text-sm;
+  background: #fff;
+}
+.app-prose pre code { @apply bg-transparent p-0 text-foreground; }
+.app-prose div.sourceCode { @apply border-0 bg-transparent p-0; }
+
+.app-prose .figure { @apply my-8; }
+.app-prose .figure img { @apply my-0; }
+.app-prose .caption { @apply text-muted-foreground mt-2 text-center text-sm; }
+
+.app-prose nav#TOC ul { @apply ms-4 list-disc; }
+.app-prose nav#TOC a { @apply no-underline; }
+
+@source "../../templates/astropaper.html";

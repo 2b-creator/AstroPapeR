@@ -1,0 +1,6 @@
+^tools$
+^node_modules$
+^\.git$
+^\.gitignore$
+^.*\.Rproj$
+^\.Rproj\.user$

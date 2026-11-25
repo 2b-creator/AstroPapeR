@@ -1,0 +1,21 @@
+Package: astropaper
+Title: AstroPaper-Styled HTML Documents for R Markdown
+Version: 0.1.0
+Authors@R:
+    person("Timothy", "Starman",
+           email = "timothystarman2005@outlook.com",
+           role = c("aut", "cre"))
+Description: An 'R Markdown' HTML output format that replaces the default
+    Bootstrap styling with the AstroPaper theme: Tailwind-based typography,
+    the Google Sans Code typeface, KaTeX math, an optional table of contents
+    and a min-light syntax highlighting palette.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    rmarkdown
+Suggests:
+    knitr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
