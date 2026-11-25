@@ -52,6 +52,9 @@ astropaper(
 )
 ```
 
+A complete example covering text, tables, math, code and plots lives in
+[`doc/sample.Rmd`](doc/sample.Rmd).
+
 ## Customise
 
 | Want to change | Where |
@@ -70,6 +73,16 @@ tools/build-css.sh
 
 The compiled `inst/css/astropaper.compiled.css` is what the package ships, so
 end users never need Node.
+
+The full walkthrough — tokens, typography, template structure, syntax
+highlighting, fonts and troubleshooting — is in the customisation guide:
+[English](doc/customize.md) · [中文](doc/customize.zh.md).
+
+## Contributing
+
+Bug reports, feature requests, documentation fixes and translations are welcome.
+[`CONTRIBUTING.md`](CONTRIBUTING.md) covers the development setup, how the CSS
+build works, the testing commands and the release checklist.
 
 ## Notes
 
